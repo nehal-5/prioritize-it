@@ -1,0 +1,84 @@
+body {
+    font-family: "Inconsolata", monospace;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#addTaskBtn {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: "Inconsolata", monospace;
+}
+
+#addTaskBtn:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.checkbox {
+    margin-right: 5px; /* Reduced margin for closer alignment */
+    width: 20px; /* Set a fixed width for better alignment */
+    height: 20px; /* Set a fixed height for better alignment */
+}
+
+.task-text {
+    flex-grow: 1; /* Allow task text to grow and take available space */
+    margin-right: 10px; /* Space between text and delete button */
+    font-family: "Inconsolata", monospace;
+}
+
+.deleteBtn {
+    padding: 5px 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Inconsolata", monospace;
+}
+
+
+.deleteBtn:hover {
+    background: #c82333;
+}
